@@ -66,7 +66,7 @@ def main():
         cgpa = st.number_input('CGPA')
         research = st.number_input('Research Published')
 
-        classify = st.sidebar.selectbox("Load Model", ("Linear Regression","Support Vector Machine (SVM)","Decision Tree", "Random Forest", "XGBoost"))
+        classify = st.sidebar.selectbox("Load Model", ("Linear Regression","Support Vector Regressor (SVR)","K-Nearest Regressor","Decision Tree", "Random Forest", "XGBoost"))
         
         def predictor_select():
             if classify == 'Linear Regression':
@@ -77,6 +77,7 @@ def main():
                 classifier = pickle.load(load_weights)
             elif classify == 'K-Nearest Regressor':
                 load_weights = open('KNR.pkl', 'rb')
+                classifier = pickle.load(load_weights)
             elif classify == 'Decision Tree':
                 load_weights = open('DT.pkl', 'rb') 
                 classifier = pickle.load(load_weights)

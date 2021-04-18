@@ -2,7 +2,7 @@
 A dockerized end to end ML Web app for predicting university graduate program admission chance.
 
 Link for web app:
-https://frozen-thicket-49319.herokuapp.com/
+https://unipred.herokuapp.com/
 
 # Running code locally:
 1. Run "pip install -r requirements.txt" This will install all the dependencies including Streamlit.

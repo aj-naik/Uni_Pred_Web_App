@@ -3,3 +3,7 @@ A dockerized end to end ML Web app for predicting university graduate program ad
 
 Link for web app:
 https://frozen-thicket-49319.herokuapp.com/
+
+# Running code locally:
+1. Run "pip install -r requirements.txt" This will install all the dependencies including Streamlit.
+2. In the project directory open a command prompt and enter "streamlit run app.py" This will start Streamlit locally.

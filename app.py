@@ -20,8 +20,7 @@ def main():
     st.markdown("ML Web App for University Admission Predcition")
     st.markdown("Disclaimer: This web app doesn't give definite chance of admission. It should be used to get a general overview of a user's chance of getting an admit and where the user can improve their chances")
     st.sidebar.markdown("ML Web App for University Admission Prediction")
-    st.sidebar.markdown("Disclaimer: This web app doesn't give definite chance of admission. It should be used to get a general overview of a user's chance of getting an admit and where the user can improve their chances")
-
+    
     @st.cache(persist=True)
     def load_data():
         data = pd.read_csv('data.csv')

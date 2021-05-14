@@ -1,5 +1,5 @@
 # Uni_Pred_Web_App
-A dockerized end to end ML Web app for predicting university graduate program admission chance created as a junior year project
+A dockerized end to end ML Web app for predicting university graduate program admission chance for North American universities created as a junior year project
 
 Link for web app:
 https://unipred.herokuapp.com/

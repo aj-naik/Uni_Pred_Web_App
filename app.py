@@ -15,10 +15,12 @@ import pickle
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
-    st.title("University Admission Prediction for Graduate Program")
-    st.sidebar.title("University Admission Prediction for Graduate Program")
+    st.title("University Admission Prediction for Graduate Program in North America")
+    st.sidebar.title("University Admission Prediction for Graduate Program in North America")
     st.markdown("ML Web App for University Admission Predcition")
+    st.markdown("Disclaimer: This web app doesn't give definite chance of admission. It should be used to get a general overview of a user's chance of getting an admit and where the user can improve their chances")
     st.sidebar.markdown("ML Web App for University Admission Prediction")
+    st.sidebar.markdown("Disclaimer: This web app doesn't give definite chance of admission. It should be used to get a general overview of a user's chance of getting an admit and where the user can improve their chances")
 
     @st.cache(persist=True)
     def load_data():

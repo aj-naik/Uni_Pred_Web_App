@@ -15,11 +15,11 @@ import pickle
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
-    st.title("University Admission Prediction for Graduate Program in North America")
-    st.sidebar.title("University Admission Prediction for Graduate Program in North America")
-    st.markdown("ML Web App for University Admission Predcition")
+    st.title("Graduate Program Admission Predictor")
+    st.sidebar.title("Graduate Program Admission Predictor")
+    st.markdown("ML Web App for University Admission Predcition for North American Universities")
     st.markdown("Disclaimer: This web app doesn't give definite chance of admission. It should be used to get a general overview of a user's chance of getting an admit and where the user can improve their chances")
-    st.sidebar.markdown("ML Web App for University Admission Prediction")
+    st.sidebar.markdown("ML Web App for University Admission Predcition for North American Universities")
     
     @st.cache(persist=True)
     def load_data():
@@ -57,7 +57,7 @@ def main():
 
     x_train, x_test, y_train, y_test = split(df)
 
-    if st.sidebar.checkbox("Custom Input",False):
+    if st.sidebar.checkbox("Predictor",False):
         st.subheader("Enter Data For Prediction")
         gre = st.number_input('GRE Score')
         toefl = st.number_input('TOEFL Score')
@@ -96,11 +96,11 @@ def main():
             # st.write(result)
             st.success('Your chance of admission is {} %'.format(result[0].round(5)*100))
 
-    if st.sidebar.checkbox("Data Visualisation", False):
+    if st.sidebar.checkbox("Data Plots", False):
        plot_list = st.sidebar.multiselect("Choose Plots", ('Correlation Matrix', 'Histogram', 'Pairplot'))
        viz_data(plot_list)
         
-    if st.sidebar.checkbox("Train a model",False):
+    if st.sidebar.checkbox("Create a custom model",False):
         st.sidebar.subheader("Choose Model")
         classifier = st.sidebar.selectbox("Model", ("Linear Regression","Support Vector Regressor (SVR)","K-Nearest Regressor","Decision Tree", "Random Forest", "XGBoost"))
         # scaler = st.sidebar.selectbox("Choose Scaler", ("Standard Scaler","Min-Max Scaler","No Scaler"))

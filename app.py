@@ -62,8 +62,8 @@ def main():
         gre = st.number_input('GRE Score')
         toefl = st.number_input('TOEFL Score')
         rating = st.number_input('Target University Rating (0-5)')
-        sop = st.number_input('SOP')
-        lor = st.number_input('LOR')
+        sop = st.number_input('Satement Of Purpose (0-5)')
+        lor = st.number_input('Letter Of Recomendation (0-5)')
         cgpa = st.number_input('CGPA')
         research = st.number_input('Research Published')
 

@@ -6,5 +6,6 @@ Link for web app:
 https://unipred.herokuapp.com/
 
 # Running code locally:
-1. Run "pip install -r requirements.txt" This will install all the dependencies including Streamlit.
-2. In the project directory open a command prompt and enter "streamlit run app.py" This will start Streamlit locally.
+1. Git clone the repository 
+2. Open CMD, navigate to cloned directory and run "pip install -r requirements.txt" This will install all the dependencies including Streamlit.
+3. In the project directory open a command prompt and enter "streamlit run app.py" This will start Streamlit locally.

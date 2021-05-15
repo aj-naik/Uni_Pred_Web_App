@@ -2,7 +2,13 @@
 A dockerized end to end ML Web app for predicting university graduate program admission chance for North American universities.
 This project was created as a junior year project
 
-Link for web app:
+# Features
+1. Various plots to get detailed information about different factors affecting admit chances.
+2. Train and load your own custom models using various algorithms on the go.
+3. Look at raw data. 
+4. Clean and Simple UX and UI :) 
+
+# Link for web app:
 https://unipred.herokuapp.com/
 
 # Running code locally:

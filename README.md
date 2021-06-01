@@ -8,6 +8,9 @@ This project was created as a junior year project
 3. Look at raw data. 
 4. Clean and Simple UX and UI :) 
 
+# Demo 
+![Demo](demo/demo.gif)
+
 # Link for web app:
 https://unipred.herokuapp.com/
 

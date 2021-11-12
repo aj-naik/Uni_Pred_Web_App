@@ -8,8 +8,8 @@ scikit-learn==1.0.1
 seaborn==0.11.2
 scikit-learn==1.0.1
 seaborn==0.11.1
-streamlit==1.1.0
+streamlit==1.2.0
 xgboost==1.5.0
 seaborn==0.11.2
-streamlit==1.1.0
+streamlit==1.2.0
 xgboost==1.5.0
